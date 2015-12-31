@@ -3,7 +3,27 @@
 * @author: guolixin
 * @update: V.0.0.1 (2015-12-23 18:32)
 */
-
+/*
+* @description: style for variables style
+* @author: hfq
+* @update: V.0.0.1 (2015-12-23 17:58)
+*/
+/*
+* @description: Mixins
+* @author: glx
+* @update: V.0.0.1 (2015-12-29 10:00)
+*/
+/*
+* @description: style for grid style
+* @author: glx
+* @update: V.0.0.1 (2015-12-29 14:58)
+*/
+/*@import "mixins/gradients";*/
+/*
+* @description: common style
+* @author: glx
+* @update: V.0.0.1 (2015-12-25 18:32)
+*/
 body {
   font-family: "Microsoft YaHei UI Light", Avenir, "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft Yahei", "Microsoft Sans Serif", "WenQuanYi Micro Hei", "sans-serif";
   color: #333333; }
