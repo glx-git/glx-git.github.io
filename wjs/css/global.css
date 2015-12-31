@@ -3,27 +3,7 @@
 * @author: guolixin
 * @update: V.0.0.1 (2015-12-23 18:32)
 */
-/*
-* @description: style for variables style
-* @author: hfq
-* @update: V.0.0.1 (2015-12-23 17:58)
-*/
-/*
-* @description: Mixins
-* @author: glx
-* @update: V.0.0.1 (2015-12-29 10:00)
-*/
-/*
-* @description: style for grid style
-* @author: glx
-* @update: V.0.0.1 (2015-12-29 14:58)
-*/
-/*@import "mixins/gradients";*/
-/*
-* @description: common style
-* @author: glx
-* @update: V.0.0.1 (2015-12-25 18:32)
-*/
+
 body {
   font-family: "Microsoft YaHei UI Light", Avenir, "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft Yahei", "Microsoft Sans Serif", "WenQuanYi Micro Hei", "sans-serif";
   color: #333333; }
@@ -221,7 +201,7 @@ header a, header a:hover {
   .video-link, .invest-notice, .navbar-default .navbar-collapse.collapse {
     display: none !important; }
 
-  .navbar-header, .navbar-default .navbar-toggle, .side-nav {
+  .avatar-sm, .navbar-default .navbar-toggle, .side-nav {
     display: inline-block; } }
 @media screen and (min-width: 992px) {
   .navbar-header {
@@ -234,9 +214,12 @@ header a, header a:hover {
   .video-link, .invest-notice, .navbar-default div.navbar-collapse.collapse {
     display: none !important; }
 
-  .navbar-header, .navbar-default .navbar-toggle, .side-nav {
+  .avatar-sm, .navbar-default .navbar-toggle, .side-nav {
     display: inline-block; } }
 @media screen and (min-width: 1200px) {
+  .navbar-header {
+    width: auto; }
+
   .order-mean {
     display: inline-block; }
 
@@ -246,7 +229,7 @@ header a, header a:hover {
   .container {
     width: 1186px; }
 
-  .navbar-header, .navbar-default .navbar-toggle, .side-nav {
+  .avatar-sm, .navbar-default .navbar-toggle, .side-nav {
     display: none; } }
 .side-nav {
   position: fixed;
@@ -771,13 +754,6 @@ footer {
 * @author: hfq
 * @update: V.0.0.1 (2015-12-23 17:58)
 */
-ul, li {
-  padding: 0;
-  margin: 0; }
-
-li {
-  list-style: none; }
-
 a, i, em, span, cite {
   font-style: normal;
   display: inline-block; }
@@ -785,8 +761,9 @@ a, i, em, span, cite {
 .user-infor-column {
   padding: 20px 0; }
   .user-infor-column .user-infor {
-    padding-right: 73px;
-    width: 331px; }
+    width: 331px;
+    height: auto;
+    padding-right: 73px; }
   .user-infor-column .user-photo-bar {
     border-right: 1px solid #f2f2f2; }
     .user-infor-column .user-photo-bar .user-photo {
@@ -810,7 +787,6 @@ a, i, em, span, cite {
     padding: 7px 0 13px 0;
     line-height: 14px; }
     .user-infor-column .user-icon a {
-      position: relative;
       font-size: 18px; }
       .user-infor-column .user-icon a span {
         position: absolute; }
@@ -852,10 +828,12 @@ a, i, em, span, cite {
   margin: 8px 0; }
 
 .ept-height {
+  width: auto;
   height: 15px;
   background-color: #f2f2f2; }
 
 .user-view {
+  width: auto;
   height: 508px;
   padding: 35px 0; }
   .user-view .col-lg-11 {
@@ -888,11 +866,13 @@ a, i, em, span, cite {
 */
 .pie-chart-container {
   width: 90%;
+  height: auto;
   padding-right: 80px;
   border-right: 1px solid #f2f2f2; }
 
 .user-pie {
-  width: 400.4px;
+  width: 400px;
+  height: auto;
   margin: 0 auto;
   margin-top: -50px; }
 
@@ -986,5 +966,132 @@ a, i, em, span, cite {
     background-color: #048be7; }
   .user-pie-show .pie-fund-show i {
     background-color: #dd3731; }
+
+.debts-banner {
+  width: 100%;
+  height: 557px;
+  background: url("../img/invest.jpg") center top #de5e40; }
+  .debts-banner .debts-infor {
+    width: 416px;
+    height: 416px;
+    margin: 0 auto;
+    color: white;
+    line-height: 2.85714;
+    font-size: 18px; }
+    .debts-banner .debts-infor li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+      .debts-banner .debts-infor li textarea {
+        width: 300px;
+        height: 120px;
+        margin-left: 50px;
+        color: #000;
+        line-height: 30px;
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        resize: none; }
+      .debts-banner .debts-infor li input {
+        width: 306px;
+        height: auto;
+        background: none;
+        border: none;
+        outline: none; }
+      .debts-banner .debts-infor li input::-webkit-outer-spin-button,
+      .debts-banner .debts-infor li input::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0; }
+      .debts-banner .debts-infor li input[type="number"] {
+        -moz-appearance: textfield; }
+      .debts-banner .debts-infor li label {
+        font-weight: normal; }
+    .debts-banner .debts-infor li.debts-infor-title {
+      font-size: 22px;
+      border-bottom: none; }
+    .debts-banner .debts-infor li.debts-infor-describtion {
+      border-bottom: none; }
+
+.button-submit {
+  width: 160px;
+  height: 70px;
+  margin: 0 auto; }
+  .button-submit button {
+    width: 148px;
+    height: 56px;
+    margin: 38px 0 0 185px;
+    line-height: 56px;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #fff;
+    background: none;
+    border: 1px solid white;
+    transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+    -o-transform: rotate(-12deg);
+    outline: none; }
+
+.borrowing-process {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 22.5px 0 15px 0; }
+  .borrowing-process .container:nth-child(1) div {
+    padding: 19.2px;
+    font-size: 24px;
+    background: white; }
+    .borrowing-process .container:nth-child(1) div .borrowing-process-title {
+      margin-bottom: 37px; }
+      .borrowing-process .container:nth-child(1) div .borrowing-process-title i {
+        width: 24px;
+        height: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        background: #f4756f;
+        color: white;
+        border-radius: 2px;
+        margin-right: 15px; }
+      .borrowing-process .container:nth-child(1) div .borrowing-process-title i, .borrowing-process .container:nth-child(1) div .borrowing-process-title em {
+        vertical-align: middle; }
+    .borrowing-process .container:nth-child(1) div li i, .borrowing-process .container:nth-child(1) div li cite, .borrowing-process .container:nth-child(1) div li em {
+      vertical-align: middle; }
+    .borrowing-process .container:nth-child(1) div li em {
+      font-size: 50px;
+      color: #cccccc;
+      font-style: italic;
+      padding-right: 27px; }
+    .borrowing-process .container:nth-child(1) div li i {
+      font-style: italic;
+      color: #666666;
+      font-size: 22px;
+      line-height: 30px; }
+    .borrowing-process .container:nth-child(1) div li cite {
+      color: #dedede; }
+  .borrowing-process .container:nth-child(2) {
+    margin-top: 16px;
+    background-color: transparent; }
+    .borrowing-process .container:nth-child(2) li div {
+      height: 235px;
+      background-color: white;
+      padding: 20px;
+      line-height: 1.71429;
+      font-size: 16px; }
+      .borrowing-process .container:nth-child(2) li div span {
+        font-size: 24px;
+        margin-bottom: 15px; }
+        .borrowing-process .container:nth-child(2) li div span i {
+          width: 24px;
+          height: 24px;
+          font-size: 16px;
+          line-height: 24px;
+          color: white;
+          border-radius: 2px;
+          margin-right: 15px; }
+    .borrowing-process .container:nth-child(2) li:nth-child(1) i {
+      background-color: #e54c64; }
+    .borrowing-process .container:nth-child(2) li:nth-child(2) i {
+      background-color: #1ebba6; }
+    .borrowing-process .container:nth-child(2) li:nth-child(3) i {
+      background-color: #4fc4f5; }
 
 /*# sourceMappingURL=global.css.map */
