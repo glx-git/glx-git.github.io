@@ -1,0 +1,29 @@
+// position shortcuts
+
+@mixin fixed-variant($top, $right, $bottom, $left) {
+  position:     fixed;
+  top:          $top;
+  right:        $right;
+  bottom:       $bottom;
+  left:         $left;
+}
+@mixin absolute-variant($top, $right, $bottom, $left) {
+  position:     absolute;
+  top:          $top;
+  right:        $right;
+  bottom:       $bottom;
+  left:         $left;
+}
+@mixin relative-variant($top, $right, $bottom, $left) {
+  position:     relative;
+  top:          $top;
+  right:        $right;
+  bottom:       $bottom;
+  left:         $left;
+}
+@mixin fixed($fixed-variant){
+  @include fixed-variant(auto,auto,auto,auto)
+}
+@mixin absolute($absolute-variant){}
+@mixin relative($relative-variant){}
+

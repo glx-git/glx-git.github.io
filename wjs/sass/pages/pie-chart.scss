@@ -6,12 +6,12 @@
 //style for pie chart
 $number:  182px;
 .pie-chart-container{
-  width: 90%;
-  padding-right: 80px;
-  border-right: 1px solid $gray-lightest;
+  @include size(90%,auto);
+  padding-right: $number-base * 8;
+  border-right: $border-base $gray-lightest;
 }
 .user-pie{
-  width: $number * 2.2;
+  @include size(400px,auto);
   margin: 0 auto;
   margin-top: -$number/3.64;
 }
@@ -31,8 +31,8 @@ $number:  182px;
   background-color:#efb512;
   border-radius:$number 0 0 0;
   &:hover{
-    left:-3px;
-    top:-3px;
+    left:-$number-base * 0.3;
+    top:-$number-base * 0.3;
   }
 }
 .pie-frozen{

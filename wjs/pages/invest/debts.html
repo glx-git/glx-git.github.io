@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../css/bootstrap.css" media="screen" rel="stylesheet" />
-    <link href="../../css/global.css" media="screen" rel="stylesheet" />
-    <title>Title</title>
+    <title>首页</title>
+    <link href="../../css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../css/global.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="side-nav clearfix text-center">
@@ -33,11 +33,11 @@
         <li class="dropdown nav-dropdown">
             <a href="javascript:;"><i class="glyphicon glyphicon-user"></i>关于我们</a>
             <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
-                <!--<li><a href="#">公司介绍</a></li>-->
-                <!--<li><a href="#">管理团队</a></li>-->
-                <!--<li><a href="#">合作伙伴</a></li>-->
-                <!--<li><a href="#">招贤纳士</a></li>-->
-                <!--<li><a href="#">联系我们</a></li>-->
+            <!--<li><a href="#">公司介绍</a></li>-->
+            <!--<li><a href="#">管理团队</a></li>-->
+            <!--<li><a href="#">合作伙伴</a></li>-->
+            <!--<li><a href="#">招贤纳士</a></li>-->
+            <!--<li><a href="#">联系我们</a></li>-->
             <!--</ul>-->
         </li>
     </ul>
@@ -93,7 +93,6 @@
                     </a>
                 </div>
                 <div id="bs-navbar" class="navbar-collapse collapse">
-                    <a class="navbar-logo navbar-brand float-l"  href="javascript:;"></a>
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="javascript:;">我要理财</a>
@@ -152,122 +151,90 @@
             </div><!--/.container-fluid -->
         </nav>
     </header>
-    <div class="container">
-        <div class="row user-infor-column">
-            <div class="col-lg-6 user-photo-bar clearfix">
-                <span class="user-photo"><img src="../../img/banner1.jpg"/></span>
-                <ul class="user-infor">
-                    <li class="user-name"><i>Ginoeyes</i><i class="glyphicon glyphicon-heart-empty"></i></li>
-                    <li class="user-icon row">
-                        <a class="col-lg-3 glyphicon glyphicon-user tooltip" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="实名认证"></a>
-                        <div class="tooltip top" role="tooltip">
-                            <div class="tooltip-arrow"></div>
-                            <div class="tooltip-inner">
-                                Some tooltip text!
-                            </div>
-                        </div>
-                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定手机"></a>
-                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定邮箱"></a>
-                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="提现密码"></a>
-                        <a class="col-lg-3 glyphicon glyphicon-user" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="绑定银行卡"></a>
-
-                    </li>
-                    <li class="user-safe-levels">
-                        <div class="progress-high">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                <span class="sr-only">60% Complete</span>
-                            </div>
-                        </div>
-                        <span class="progress-bar-info"><em>安全等级：</em><i class="levels-high">强</i></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 user-account text-center income-num clearfix"><p>累计收益</p><p>100000.00</p></div>
-            <div class="col-lg-3 user-account text-center balance-num clearfix"><p>可用余额</p><p>3000.00</p></div>
-            <div class="col-lg-3 user-account-operation text-right clearfix">
-                <p><button type="button" class="btn btn-danger">充值</button></p>
-                <p><button type="button" class="btn btn-info">提现</button></p>
+    <div class="debts-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-15">
+                    <ul class="debts-infor">
+                        <li class="text-center debts-infor-title">借款申请</li>
+                        <li><label>姓名：</label><input type="text"></li>
+                        <li><label>手机号：</label><input type="number"></li>
+                        <li><label>所在城市：</label><input type="text"></li>
+                        <li class="debts-infor-describtion"><label>项目描述（300字内）</label><textarea></textarea></li>
+                    </ul>
+                    <div class="button-submit"><button>提交申请</button></div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-lg-15 ept-height"></div>
-    <div class="container clearfix">
-        <div class="row user-view">
-            <div class="col-lg-11">
-                <div class="pie-chart-container">
-                    <div class="user-pie-show clearfix">
-                        <span class="pie-balance-show">
-                            <em>
-                                可用余额<br/>
-                                <cite>3000.00</cite>
-                            </em>
-                            <i></i>
-                        </span>
-                        <span class="pie-frozen-show">
-                            <i></i>
-                            <em>
-                                冻结资金<br/>
-                                <cite>7000.00</cite>
-                            </em>
-                        </span>
-                    </div>
-                    <div class="user-pie">
-                        <div class="user-pie-box clearfix">
-                            <a class="pie pie-fund"></a>
-                            <a class="pie pie-frozen"></a>
-                            <a class="pie pie-balance"></a>
-                            <a class="pie pie-payment"></a>
-                            <a class="pie-number text-center">
-                                <table>
-                                    <tr><td>资产统计<i class="glyphicon glyphicon-user"></i></td></tr>
-                                    <tr><td><b>100000.00</b></td></td></tr>
-                                </table>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="user-pie-show border-right clearfix">
-                        <span class="pie-payment-show">
-                            <em>
-                                待回款本息<br/>
-                                <cite>90000.00</cite>
-                            </em>
-                            <i></i>
-                        </span>
-                        <span class="pie-fund-show">
-                            <i></i>
-                            <em>
-                                持有货币基金份额<br/>
-                                <cite>1000.00</cite>
-                            </em>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <ul>
-                    <li class="text-left">
-                        <p class="glyphicon glyphicon-user"></p>
-                        <p>我的奖励：<i>100.00</i></p>
-                        <p>未生效：<i>20.00</i></p>
-                        <p>可使用：<i>20.00</i></p>
-                        <p>提现卷：<i>0</i>张</p>
+    <div class="borrowing-process">
+        <div class="container clearfix">
+            <div>
+                <span class="borrowing-process-title"><i class="glyphicon glyphicon-import text-center"></i><em>借款流程</em></span>
+                <ul class="row">
+                    <li class="col-lg-3">
+                        <cite></cite>
+                        <em>01</em>
+                        <i>填写资料<br/>提交申请</i>
                     </li>
-                    <li class="text-right">
-                        <p class="glyphicon glyphicon-user"></p>
-                        <p>累计预约<br/><i>0.00</i></p>
+                    <li class="col-lg-3">
+                        <cite class="glyphicon glyphicon-menu-right"></cite>
+                        <em>02</em>
+                        <i>微金所<br/>联系您</i>
                     </li>
-                </ul>
-                <ul>
-                    <li class="text-left">
-                        <p class="glyphicon glyphicon-user"></p>
-                        <p>我的转让<br/><i>300.00</i></p>
+                    <li class="col-lg-3">
+                        <cite class="glyphicon glyphicon-menu-right"></cite>
+                        <em>03</em>
+                        <i>担保公司<br/>开始介入</i>
                     </li>
-                    <li class="text-right">
-                        <p class="glyphicon glyphicon-user"></p>
-                        <p>我的体验金<br/><i>1000.00</i></p>
+                    <li class="col-lg-3">
+                        <cite class="glyphicon glyphicon-menu-right"></cite>
+                        <em>04</em>
+                        <i>提交资料<br/>上线融资</i>
                     </li>
+                    <li class="col-lg-3">
+                        <cite class="glyphicon glyphicon-menu-right"></cite>
+                        <em>05</em>
+                        <i>融资成功</i></li>
                 </ul>
             </div>
+        </div>
+        <div class="container clearfix">
+            <ul class="row">
+                <li class="col-lg-5">
+                    <div>
+                        <span><i class="glyphicon glyphicon-import text-center"></i><em>申请条件</em></span>
+                        <p>
+                            1. 中国公民<br/>
+                            2. 20-55周岁<br/>
+                            3. 现居住地居住六个月以上
+                        </p>
+                    </div>
+                </li>
+                <li class="col-lg-5">
+                    <div>
+                        <span><i class="glyphicon glyphicon-import text-center"></i><em>申请条件</em></span>
+                        <p>
+                            1. 借款额度：1-300万元<br/>
+                            2. 借款年化利率：10-25%<br/>
+                            3. 借款期限：1-12个月<br/>
+                            4. 还款方式：月息到期还本、等额本息
+                        </p>
+                    </div>
+                </li>
+                <li class="col-lg-5">
+                    <div>
+                        <span><i class="glyphicon glyphicon-import text-center"></i><em>申请条件</em></span>
+                        <p>
+                            1. 身份证<br/>
+                            2. 个人征信报告（可去当地人民银行打印）<br/>
+                            3. 带公司公章的劳动合同或工作证明<br/>
+                            4. 近3个月工资卡银行流水<br/>
+                            5. 如企业借款则需提供企业相关证明
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <footer>
@@ -353,31 +320,6 @@
             </div>
         </div>
     </footer>
-    <div class="side-service text-center">
-        <a href="#" class="glyphicon glyphicon-apple"></a>
-        <a href="#" class="glyphicon glyphicon-apple side-help">
-            <ul class="text-left">
-                <li class="side-weixin"><i class="text-center glyphicon glyphicon-user"></i>官方微信公众号</li>
-                <li class="side-qq"><i class="text-center glyphicon glyphicon-user"></i>联系在线QQ客服</li>
-                <li class="side-email"><i class="text-center glyphicon glyphicon-user"></i>投诉邮箱：service@weijinsuo.com</li>
-                <li class="side-forum"><i class="text-center glyphicon glyphicon-user"></i>进入理财论坛</li>
-                <li class="side-call"><i class="text-center glyphicon glyphicon-user"></i>免费客服电话：4006-89-4006</li>
-                <li class="side-fix"></li>
-            </ul>
-        </a>
-        <a href="#" class="glyphicon glyphicon-apple side-app">
-            <ul>
-                <li class="side-weixin">微金所理财APP扫描下载</li>
-                <li class="side-qq"><em>（iOS/Android 通用）</em></li>
-                <li class="side-email">
-                    <img src="../../img/img-weixin.jpg"/>
-                </li>
-                <li class="side-fix"></li>
-            </ul>
-        </a>
-        <a href="#" class="glyphicon glyphicon-apple"></a>
-        <a href="#" class="glyphicon glyphicon-apple"></a>
-    </div>
 </div>
 </body>
 </html>
