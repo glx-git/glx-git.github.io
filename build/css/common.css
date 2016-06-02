@@ -430,7 +430,7 @@ ul,li{
 /*图标*/
 @font-face {
     font-family: 'IcoMoon-Free';
-    src: url('../font/IcoMoon-Free.ttf') format('truetype');
+    src: url('../fonts/IcoMoon-Free.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -441,7 +441,7 @@ ul,li{
   height: 20px;
   text-align: center;
   vertical-align: middle;
-  /*background: url(../img/icon.png) 0 0 #fff;*/
+  /*background: url(../images/icon.png) 0 0 #fff;*/
   font-family: 'IcoMoon-Free';
   font-size: 16px;
 }
