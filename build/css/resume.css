@@ -1,0 +1,143 @@
+.outer {
+	background-color: rgb(255,255,255);
+}
+.box {
+	position: relative;
+}
+.aside {
+	position: absolute;
+	width:300px;
+	height: 100%;
+	background-color: rgb(37,70,101);
+	color: rgb(255,255,255);
+	box-sizing:border-box;
+	padding:30px;
+}
+.photo-img {
+	width: 150px;
+	height: 200px;  
+	border:5px solid #fff;
+}
+.basic-info,.skill-info,.interest-info {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.basic-info  li{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.basic-info .icon {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 50%;
+	text-align: center;
+	background-color:#fff;
+	color: rgb(37,70,101);
+}
+
+.progress-bar {
+
+}
+.progress-number {
+	display: block;
+	width: 100%;
+	height: 12px;
+	margin-bottom: 15px;
+	background-color: #92a4b2;
+	color: #92a4b2;
+	overflow: hidden;
+}
+.progress-number-30 {
+	width: 30%;
+}
+.progress-number-50 {
+	width: 50%;
+}
+.progress-number-60 {
+	width: 60%;
+}
+.progress-number-70 {
+	width: 70%;
+}
+.progress-number-80 {
+	width: 80%;
+}
+.skill-info p {
+	margin: 5px 0 ;
+}
+.hobby {
+	color: #90a1b1;
+}
+.hobby h3 {
+	font-size: 20px;
+}
+.interest-info {
+	font-size: 20px;
+	padding-left: 0;
+	margin-top: 0;
+}
+.interest-info li{
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+.interest-info .icon {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+
+/*content*/
+.content {
+/*width:75%;
+float: left;*/
+margin-left: 300px;
+color: rgb(37,70,101);
+box-sizing:border-box;
+padding: 30px;
+}
+.title {
+font-size: 50px;
+margin:0;
+}
+.sub-title {
+	font-size: 16px;
+	margin: 10px 0 0;
+}
+.section-title {
+	margin-top: 20px;
+}
+.section-title .icon {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	border-radius: 50%;
+	text-align: center;
+	background-color: rgb(37,70,101);
+	color: #fff;
+}
+.section-sub-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 50px;
+	padding: 8px 0 3px;
+	border-bottom: 2px solid rgb(37,70,101);
+}
+.section-list {
+	margin-top: 30px;
+}
+.sub-section {
+	margin: 30px 0 30px 30px ;
+	padding-bottom: 30px;
+	border-bottom: 2px dotted rgb(37,70,101);
+}
+.font-weight {
+	font-weight: bold;
+}
+.border-none {
+	border:none;
+}
