@@ -132,7 +132,7 @@
 .sub-section {
 	margin: 30px 0 30px 30px ;
 	padding-bottom: 30px;
-	border-bottom: 2px dotted rgb(37,70,101);
+	border-bottom: 2px dotted #ccc;
 }
 .font-weight {
 	font-weight: bold;
